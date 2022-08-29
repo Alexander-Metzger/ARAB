@@ -14,7 +14,7 @@ sudo dnf remove kmahjongg kmines kmouth kolourpaint okular kcharselect gnome-abr
 
 #install software
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-sudo dnf install kbackup ktorrent lutris neovim mullvad-vpn libreoffice libreoffice-langpack-de libreoffice-langpack-en libreoffice-TexMaths OpenAudible jami openshot blender cura tnftp hashcat audacity 
+sudo dnf install kbackup mpv mediawriter ktorrent asunder lutris neovim mullvad-vpn youtube-dl libreoffice libreoffice-langpack-de libreoffice-langpack-en libreoffice-TexMaths OpenAudible jami openshot blender cura tnftp hashcat audacity gimp inkscape
 
 #connect to mullvad 
 mullvad account login 3474947215549241
