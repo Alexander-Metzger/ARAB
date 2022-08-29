@@ -16,6 +16,13 @@ sudo dnf remove kmahjongg kmines kmouth kolourpaint okular kcharselect gnome-abr
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 sudo dnf install kbackup mpv mediawriter ktorrent asunder lutris neovim mullvad-vpn youtube-dl libreoffice libreoffice-langpack-de libreoffice-langpack-en libreoffice-TexMaths OpenAudible jami openshot blender cura tnftp hashcat audacity gimp inkscape
 
+#add good rss feeds
+akregator -a https://www.derstandard.at/rss
+akregator -a https://www.sciencedaily.com/rss/computers_math.xml
+akregator -a https://www.sciencedaily.com/rss/space_time/asteroids,_comets_and_meteors.xml
+akregator -a https://www.sciencedaily.com/rss/space_time/solar_flare.xml
+akregator -a https://www.sciencedaily.com/rss/space_time/dark_matter.xml
+
 #connect to mullvad 
 mullvad account login 3474947215549241
 mullvad obfuscation
