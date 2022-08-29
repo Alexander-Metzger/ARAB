@@ -25,6 +25,5 @@ akregator -a https://www.sciencedaily.com/rss/space_time/dark_matter.xml
 
 #connect to mullvad 
 mullvad account login 3474947215549241
-mullvad obfuscation
 mullvad connect
 
