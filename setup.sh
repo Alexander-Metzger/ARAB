@@ -15,7 +15,7 @@ sudo dnf remove kmahjongg kmines kmouth kolourpaint okular kcharselect gnome-abr
 #install software
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 sudo dnf install \ 
- krita gimp inkscape nvim libreoffice libreoffice-langpack-de libreoffice-langpack-en libreoffice-TexMaths audacity ardour6 mpv openshot obs-studio ktorrent jami youtube-dl blender cura mangohud lutris qemu virt-manager virt-backup kbackup mediawriter asunder xfburn tnftp hashcat openssh reaver
+ krita gimp inkscape nvim libreoffice libreoffice-langpack-de libreoffice-langpack-en libreoffice-TexMaths neofetch audacity ardour6 mpv openshot obs-studio ktorrent jami youtube-dl blender cura mangohud lutris qemu virt-manager virt-backup kbackup mediawriter asunder xfburn tnftp hashcat openssh reaver
 
 #add good rss feeds
 akregator -a https://www.derstandard.at/rss
