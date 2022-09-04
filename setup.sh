@@ -14,8 +14,8 @@ sudo dnf remove kmahjongg kmines kmouth kolourpaint okular kcharselect gnome-abr
 
 #install software
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-sudo dnf install \
- kbackup mpv mediawriter ktorrent asunder lutris neovim mullvad-vpn youtube-dl mangohud libreoffice qemu virt-manager virt-backup libreoffice-langpack-de libreoffice-langpack-en libreoffice-TexMaths jami openshot blender cura tnftp hashcat audacity gimp obs-studio inkscape
+sudo dnf install \ 
+ krita gimp inkscape nvim libreoffice libreoffice-langpack-de libreoffice-langpack-en libreoffice-TexMaths audacity ardour6 mpv openshot obs-studio ktorrent jami youtube-dl blender cura mangohud lutris qemu virt-manager virt-backup kbackup mediawriter asunder xfburn tnftp hashcat openssh reaver
 
 #add good rss feeds
 akregator -a https://www.derstandard.at/rss
@@ -25,6 +25,7 @@ akregator -a https://www.sciencedaily.com/rss/space_time/solar_flare.xml
 akregator -a https://www.sciencedaily.com/rss/space_time/dark_matter.xml
 
 #connect to mullvad 
-mullvad account login 3474947215549241
+mullvad account login 
 mullvad connect
 
+ 
