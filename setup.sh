@@ -20,13 +20,6 @@ sudo dnf install \
  krita gimp inkscape neovim libreoffice libreoffice-langpack-de libreoffice-langpack-en libreoffice-TexMaths neofetch audacity ardour6 mpv openshot obs-studio ktorrent jami youtube-dl blender cura mangohud lutris qemu virt-manager virt-backup kbackup mediawriter asunder xfburn tnftp hashcat openssh -y
 sudo dnf install OpenAudible_3.5.9_x86_64.rpm MullvadVPN-2022.4_x86_64.rpm -y
 
-#add good rss feeds
-akregator -a https://www.derstandard.at/rss
-akregator -a https://www.sciencedaily.com/rss/computers_math.xml
-akregator -a https://www.sciencedaily.com/rss/space_time/asteroids,_comets_and_meteors.xml
-akregator -a https://www.sciencedaily.com/rss/space_time/solar_flare.xml
-akregator -a https://www.sciencedaily.com/rss/space_time/dark_matter.xml
-
 #connect to mullvad 
 mullvad account login 
 mullvad connect
