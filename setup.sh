@@ -27,5 +27,6 @@ mullvad connect
 #detect sensors with lm_sensors
 sudo sensors-detect
 clear
-neofetch
-hddtep /dev/nvme0n1
+neofetch && hddtemp /dev/nvme0n1
+sleep 5
+sudo systemctl reboot
