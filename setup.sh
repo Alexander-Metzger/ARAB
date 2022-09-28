@@ -20,16 +20,14 @@ wget https://github.com/mullvad/mullvadvpn-app/releases/download/2022.4/MullvadV
 wget https://github.com/openaudible/openaudible/releases/download/v3.5.9/OpenAudible_3.5.9_x86_64.rpm
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 sudo dnf install \
-  krita gimp inkscape neovim libreoffice libreoffice-langpack-de libreoffice-langpack-en libreoffice-TexMaths neofetch audacity ardour6 mpv openshot obs-studio ktorrent jami youtube-dl blender cura qemu virt-manager virt-backup kbackup mediawriter asunder tnftp hashcat sensors-detect openssh hddtemp rpmbuild -y
+  inkscape gimp krita audacity ardour6 mpv blender cura neovim libreoffice libreoffice-langpack-de libreoffice-langpack-en libreoffice-TexMaths neofetch mpv openshot obs-studio ktorrent jami youtube-dl cura qemu virt-manager virt-backup kbackup mediawriter asunder hashcat openssh rpmbuild git bsdtar veracrypt lutris -y
 sudo dnf install OpenAudible_3.5.9_x86_64.rpm MullvadVPN-2022.4_x86_64.rpm -y
 
 #connect to mullvad 
 mullvad account login 
 mullvad connect
 
-#detect sensors with lm_sensors
-sudo sensors-detect
+#fetch
 clear
-neofetch && hddtemp /dev/nvme0n1
 sleep 5
 sudo systemctl reboot
