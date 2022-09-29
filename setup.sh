@@ -11,6 +11,7 @@ sudo dnf \
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 sudo dnf config-manager --add-repo https://dl.jami.net/nightly/fedora_36/jami-nightly.repo
 dnf config-manager --add-repo https://download.opensuse.org/repositories/home:jejb1:Element/Fedora_36/home:jejb1:Element.repo
+sudo dnf update -y
 
 #remove bloat
 sudo dnf remove kmahjongg kmines kmouth kolourpaint okular kcharselect gnome-abrt khelpcenter kmail kpat
