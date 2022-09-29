@@ -30,5 +30,5 @@ mullvad connect
 
 #fetch
 clear
-sleep 5
+sleep 2
 sudo systemctl reboot
