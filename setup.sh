@@ -16,7 +16,7 @@ lient.repo
 sudo dnf update -y
 
 #remove bloat
-sudo dnf remove thunar-y
+sudo dnf remove thunar nano -y
 
 #install software
 wget https://github.com/mullvad/mullvadvpn-app/releases/download/2022.4/MullvadVPN-2022.4_x86_64.rpm
