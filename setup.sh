@@ -16,7 +16,7 @@ lient.repo
 sudo dnf update -y
 
 #remove bloat
-sudo dnf remove thunar nano -y
+sudo dnf remove thunar nano i3-sensible-terminal xfce4-terminal -y
 
 #install software
 wget https://github.com/openaudible/openaudible/releases/download/v3.5.9/OpenAudible_3.5.9_x86_64.rpm
@@ -25,14 +25,10 @@ sudo dnf install \
  
 sudo dnf install \
   krita ardour6 blender neovim neofetch mpv openshot obs-studio jami youtube-dl cura virt-backup virt-install asunder git bsdtar veracrypt lutris vorta keepassxc otpclient -y
-sudo dnf install hashcat openssh wireshark qbittorrent vche compton alacritty wireguard-tools -y
+sudo dnf install hashcat openssh wireshark qbittorrent vche compton alacritty wireguard-tools nnn -y
 sudo dnf install libreoffice libreoffice-langpack-de libreoffice-langpack-en libreoffice-TexMaths -y
 sudo dnf install OpenAudible_3.5.9_x86_64.rpm -y
 sudo dnf group install --with-optional virtualization -y
-
-#connect to mullvad 
-mullvad account login 
-mullvad connect
 
 #fetch
 sudo systemctl enable libvirtd
