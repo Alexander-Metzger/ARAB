@@ -16,15 +16,13 @@ lient.repo
 sudo dnf update -y
 
 #remove bloat
-sudo dnf remove thunar nano i3-sensible-terminal xfce4-terminal -y
+sudo dnf remove thunar nano xfce4-terminal -y
 
 #install software
 wget https://github.com/openaudible/openaudible/releases/download/v3.5.9/OpenAudible_3.5.9_x86_64.rpm
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 #config
-use 'neovim/nvim-lspconfig'
-use 'simrat39/rust-tools.nvim'
 export LV_BRANCH="rolling"; bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/rolling/utils/installer/install.sh)
 
 #install software
