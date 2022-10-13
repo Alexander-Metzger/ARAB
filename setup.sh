@@ -18,18 +18,14 @@ sudo dnf update -y
 sudo dnf remove thunar nano xfce4-terminal -y
 
 #install software
-wget https://github.com/openaudible/openaudible/releases/download/v3.5.9/OpenAudible_3.5.9_x86_64.rpm
+wget https://github.com/mullvad/mullvadvpn-app/releases/download/2022.5-beta2/MullvadVPN-2022.5-beta2_x86_64.rpm
+wget https://github.com/openaudible/openaudible/releases/download/v3.6.2/OpenAudible_3.6.2_x86_64.rpm
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-
-#config
-export LV_BRANCH="rolling"; bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/rolling/utils/installer/install.sh)
 
 #install software
 sudo dnf install \
-  krita ardour6 blender neovim neofetch mpv openshot obs-studio jami youtube-dl cura virt-backup virt-install asunder git bsdtar veracrypt lutris vorta keepassxc otpclient-y
-sudo dnf install hashcat openssh wireshark qbittorrent vche compton alacritty wireguard-tools nnn -y
-sudo dnf install libreoffice libreoffice-langpack-de libreoffice-langpack-en libreoffice-TexMaths -y
-sudo dnf install OpenAudible_3.5.9_x86_64.rpm -y
+  krita ardour6 blender neovim neofetch mpv openshot obs-studio jami youtube-dl cura virt-backup virt-install asunder git rpm-build dbus-devel bsdtar veracrypt lutris vorta keepassxc otpclienthashcat openssh wireshark qbittorrent vche compton alacritty wireguard-tools nnn libreoffice libreoffice-langpack-de libreoffice-langpack-en libreoffice-TexMaths polybar -y
+sudo dnf install OpenAudible_3.6.2_x86_64.rpm MullvadVPN-2022.5-beta2_x86_64.rpm -y
 sudo dnf group install --with-optional virtualization -y
 
 #fetch
