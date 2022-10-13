@@ -21,8 +21,13 @@ sudo dnf remove thunar nano i3-sensible-terminal xfce4-terminal -y
 #install software
 wget https://github.com/openaudible/openaudible/releases/download/v3.5.9/OpenAudible_3.5.9_x86_64.rpm
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-sudo dnf install \
- 
+
+#config
+use 'neovim/nvim-lspconfig'
+use 'simrat39/rust-tools.nvim'
+export LV_BRANCH="rolling"; bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/rolling/utils/installer/install.sh)
+
+#install software
 sudo dnf install \
   krita ardour6 blender neovim neofetch mpv openshot obs-studio jami youtube-dl cura virt-backup virt-install asunder git bsdtar veracrypt lutris vorta keepassxc otpclient -y
 sudo dnf install hashcat openssh wireshark qbittorrent vche compton alacritty wireguard-tools nnn -y
