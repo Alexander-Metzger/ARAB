@@ -10,8 +10,7 @@ sudo dnf \
   install https://github.com/rpmsphere/noarch/raw/master/r/rpmsphere-release-36-1.noarch.rpm
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 sudo dnf config-manager --add-repo https://dl.jami.net/nightly/fedora_36/jami-nightly.repo
-sudo dnf config-manager --add-repo https://download.opensuse.org/repositories/home:/polslinux:/otpclient/Fedora_36/home:polslinux:otpc
-lient.repo
+sudo dnf config-manager --add-repo https://download.opensuse.org/repositories/home:/polslinux:/otpclient/Fedora_36/home:polslinux:otpclient.repo
 
 sudo dnf update -y
 
@@ -27,7 +26,7 @@ export LV_BRANCH="rolling"; bash <(curl -s https://raw.githubusercontent.com/lun
 
 #install software
 sudo dnf install \
-  krita ardour6 blender neovim neofetch mpv openshot obs-studio jami youtube-dl cura virt-backup virt-install asunder git bsdtar veracrypt lutris vorta keepassxc otpclient -y
+  krita ardour6 blender neovim neofetch mpv openshot obs-studio jami youtube-dl cura virt-backup virt-install asunder git bsdtar veracrypt lutris vorta keepassxc otpclient-y
 sudo dnf install hashcat openssh wireshark qbittorrent vche compton alacritty wireguard-tools nnn -y
 sudo dnf install libreoffice libreoffice-langpack-de libreoffice-langpack-en libreoffice-TexMaths -y
 sudo dnf install OpenAudible_3.5.9_x86_64.rpm -y
