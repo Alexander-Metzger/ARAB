@@ -11,8 +11,7 @@ sudo dnf \
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 sudo dnf config-manager --add-repo https://dl.jami.net/nightly/fedora_36/jami-nightly.repo
 sudo dnf config-manager --add-repo https://download.opensuse.org/repositories/home:jejb1:Element/Fedora_36/home:jejb1:Element.repo
-sudo dnf config-manager --add-repo https://download.opensuse.org/repositories/home:/polslinux:/otpclient/Fedora_36/home:polslinux:otpc
-lient.repo
+sudo dnf config-manager --add-repo https://download.opensuse.org/repositories/home:/polslinux:/otpclient/Fedora_36/home:polslinux:otpclient.repo
 
 sudo dnf update -y
 
@@ -24,7 +23,7 @@ wget https://github.com/mullvad/mullvadvpn-app/releases/download/2022.4/MullvadV
 wget https://github.com/openaudible/openaudible/releases/download/v3.5.9/OpenAudible_3.5.9_x86_64.rpm
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 sudo dnf install \
-  inkscape krita audacity ardour6 mpv blender neovim libreoffice libreoffice-langpack-de libreoffice-langpack-en libreoffice-TexMaths neofetch openshot obs-studio ktorrent jami youtube-dl cura virt-install asunder hashcat openssh rpmbuild git bsdtar veracrypt lutris element-desktop vorta keepassxc otpclient -y
+  inkscape krita audacity ardour6 mpv blender neovim libreoffice libreoffice-langpack-de libreoffice-langpack-en libreoffice-TexMaths neofetch openshot obs-studio ktorrent jami youtube-dl cura virt-install asunder hashcat openssh git bsdtar veracrypt lutris vorta keepassxc otpclient -y
 sudo dnf install OpenAudible_3.5.9_x86_64.rpm MullvadVPN-2022.4_x86_64.rpm -y
 sudo dnf group install --with-optional virtualization
 
