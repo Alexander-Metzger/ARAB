@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #update
-sudo dnf  update -y && sudo dnf upgrade -y
+sudo dnf update -y && sudo dnf upgrade -y
 
 #add repositories
 sudo dnf install \
@@ -16,14 +16,14 @@ sudo dnf config-manager --add-repo https://download.opensuse.org/repositories/ho
 sudo dnf update -y
 
 #remove bloat
-sudo dnf remove kmahjongg kmines kmouth kolourpaint okular kcharselect gnome-abrt khelpcenter kmail kpat dragonplayer -y
+sudo dnf remove kmahjongg kmines kmouth kolourpaint okular kcharselect gnome-abrt khelpcenter kmail kpat dragonplayer akregator gwenview korganizer -y
 
 #install software
 wget https://github.com/mullvad/mullvadvpn-app/releases/download/2022.4/MullvadVPN-2022.4_x86_64.rpm
 wget https://github.com/openaudible/openaudible/releases/download/v3.5.9/OpenAudible_3.5.9_x86_64.rpm
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 sudo dnf install \
-  inkscape krita audacity ardour6 mpv blender neovim libreoffice libreoffice-langpack-de libreoffice-langpack-en libreoffice-TexMaths neofetch openshot obs-studio ktorrent jami youtube-dl cura virt-install asunder hashcat openssh git bsdtar veracrypt lutris vorta keepassxc otpclient -y
+  inkscape krita audacity ardour6 mpv blender neovim libreoffice libreoffice-langpack-de libreoffice-langpack-en libreoffice-TexMaths neofetch openshot obs-studio ktorrent jami youtube-dl cura virt-install asunder hashcat openssh git bsdtar veracrypt lutris vorta keepassxc otpclient wireguard-tools -y
 sudo dnf install OpenAudible_3.5.9_x86_64.rpm MullvadVPN-2022.4_x86_64.rpm -y
 sudo dnf group install --with-optional virtualization
 
