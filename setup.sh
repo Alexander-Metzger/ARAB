@@ -16,23 +16,25 @@ sudo dnf config-manager --add-repo https://download.opensuse.org/repositories/ho
 sudo dnf update -y
 
 #remove bloat
-sudo dnf remove kmahjongg kmines kmouth kolourpaint okular kcharselect gnome-abrt khelpcenter kmail kpat dragonplayer akregator gwenview korganizer -y
+#sudo dnf remove kmahjongg kmines kmouth kolourpaint okular kcharselect gnome-abrt khelpcenter kmail kpat dragonplayer akregator gwenview korganizer -y
 
 #install software
-wget https://github.com/mullvad/mullvadvpn-app/releases/download/2022.4/MullvadVPN-2022.4_x86_64.rpm
 wget https://github.com/openaudible/openaudible/releases/download/v3.5.9/OpenAudible_3.5.9_x86_64.rpm
+wget https://github.com/Revolutionary-Games/Thrive-Launcher/releases/download/v1.3.2/thrive-launcher-1.3.2.x86_64.rpm
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 sudo dnf install \
-  inkscape krita audacity ardour6 mpv blender neovim libreoffice libreoffice-langpack-de libreoffice-langpack-en libreoffice-TexMaths neofetch openshot obs-studio ktorrent jami youtube-dl cura virt-install asunder hashcat openssh git bsdtar veracrypt lutris vorta keepassxc otpclient wireguard-tools -y
-sudo dnf install OpenAudible_3.5.9_x86_64.rpm MullvadVPN-2022.4_x86_64.rpm -y
-sudo dnf group install --with-optional virtualization
+  inkscape krita audacity ardour6 mpv blender neovim libreoffice-langpack-de libreoffice-langpack-en libreoffice-TexMaths neofetch openshot obs-studio qbittorrent jami youtube-dl cura virt-install asunder hashcat openssh git bsdtar veracrypt lutris vorta keepassxc otpclient wireguard-tools -y
+sudo dnf install polybar alacritty blueman flameshot rofi feh lxappearance asciiquarium cmatrix gpick filezilla papirus-icon-theme nitrogen
+git clone https://github.com/PapirusDevelopmentTeam/papirus-folders.git
+cd papirus-folders
+./papirus-folders -t ePapirus -C violet
 
-#connect to mullvad 
-mullvad account login 
-mullvad connect
+sudo dnf install OpenAudible_3.5.9_x86_64.rpm thrive-launcher-1.3.2.x86_64.rpm -y
+sudo dnf group install --with-optional virtualization -y
+sudo dnf install http://www.geogebra.net/linux/rpm/x86_64/geogebra-classic-6.0.659.0-202108101226.x86_64.rpm -y
 
 #fetch
 sudo systemctl enable libvirtd
 clear
-sleep 2
-sudo systemctl reboot
+sleep 3
+exit 1 
