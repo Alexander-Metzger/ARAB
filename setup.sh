@@ -17,6 +17,7 @@ sudo dnf update -y
 
 #remove bloat
 #sudo dnf remove kmahjongg kmines kmouth kolourpaint okular kcharselect gnome-abrt khelpcenter kmail kpat dragonplayer akregator gwenview korganizer -y
+sudo dnf remove xfce4-terminal
 
 #install software
 wget https://github.com/openaudible/openaudible/releases/download/v3.5.9/OpenAudible_3.5.9_x86_64.rpm
