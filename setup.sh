@@ -25,7 +25,7 @@ wget https://github.com/Revolutionary-Games/Thrive-Launcher/releases/download/v1
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 sudo dnf install \
   inkscape krita audacity ardour6 mpv blender neovim libreoffice-langpack-de libreoffice-langpack-en libreoffice-TexMaths neofetch openshot obs-studio qbittorrent jami youtube-dl cura virt-install asunder hashcat openssh git bsdtar veracrypt lutris vorta keepassxc otpclient wireguard-tools -y
-sudo dnf install polybar alacritty blueman flameshot rofi feh lxappearance asciiquarium cmatrix gpick filezilla papirus-icon-theme nitrogen
+sudo dnf install polybar alacritty blueman flameshot rofi feh lxappearance asciiquarium cmatrix gpick filezilla papirus-icon-theme nitrogen rzip -y
 git clone https://github.com/PapirusDevelopmentTeam/papirus-folders.git
 cd papirus-folders
 ./papirus-folders -t ePapirus -C violet
