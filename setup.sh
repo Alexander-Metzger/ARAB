@@ -32,6 +32,7 @@ cd papirus-folders
 
 sudo dnf install OpenAudible_3.5.9_x86_64.rpm thrive-launcher-1.3.2.x86_64.rpm -y
 sudo dnf group install --with-optional virtualization -y
+sudo rpm --import https://static.geogebra.org/linux/office@geogebra.org.gpg.key
 sudo dnf install http://www.geogebra.net/linux/rpm/x86_64/geogebra-classic-6.0.659.0-202108101226.x86_64.rpm -y
 
 #fetch
