@@ -1,8 +1,6 @@
 #!/bin/bash
 
 #create some folders
-cp -avr 
-cp -avr rofi ~/.config/
 mkdir ~/Bilder/wallpaper
 mkdir ~/Dokumente/Schule
 mkdir ~/Bilder/Memes
@@ -29,30 +27,17 @@ sudo dnf install \
  sudo dnf install -y MullvadVPN-*.rpm
 
 #install nice fonts
-tar xf scientifica-v1.2.tar.gz
-cp scientifica/ttf/* ~/.local/share/fonts/
+#tar xf scientifica-v1.2.tar.gz
+#cp scientifica/ttf/* ~/.local/share/fonts/
 #git clone https://github.com/cmvnd/fonts.git
-sh fonts/install
+
 
 #speed up dnf 
 #sudo echo fastestmirror=1 >> /etc/dnf/dnf.conf
 #sudo echo max_parallel_downloads=10 >> /etc/dnf/dnf.conf
 #sudo echo deltarpm=true >> /etc/dnf/dnf.conf
 
-#configure a few pieces of software
-cp -f init.vim ~/.config/nvim
-rm ~/.config/i3/config
-cp config ~/config/i3/
-cp std-wallpaper.jpg  ~/Bilder/wallpaper
-cp rofi/config ~/.config/rofi
-cp rofi/16script.rasi ~/.config/rofi
-cp picom.conf ~/.config/picom
-cp polybar/config ~/.config/polybar 
-cp polybar/launch.sh  ~/.config/polybar
-cp polybar/playpause.sh ~/.config/polybar
-
 sudo systemctl enable libvirtd
-rm -rf scientifica 
 rm -rf MullvadVPN-*.rpm
 rm -rf geogebra-classic-*.rpm
 
