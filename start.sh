@@ -15,7 +15,7 @@ mkdir ~/Musik/Kommunismus
 mkdir ~/Projekte
 
 #remove KDE bloat
-sudo dnf remove -y dragonplayer kaddressbook dnfdragora gwenview khelpcenter kmail kmouth sieveeditor kolourpaint korganizer
+sudo dnf remove -y konsole dragonplayer kaddressbook dnfdragora gwenview khelpcenter kmail kmouth sieveeditor kolourpaint korganizer
 
 #add rpm-fusion
 sudo dnf install -y \
