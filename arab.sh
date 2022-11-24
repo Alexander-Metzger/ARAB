@@ -1,11 +1,16 @@
 #!/bin/bash
 
+#This script was created & tested for Fedora 37 KDE Plasma Spin and will be continously updated and optimized.
+
 #create some folders
 mkdir ~/Bilder/wallpaper
 mkdir ~/Dokumente/Schule
 mkdir ~/Dokumente/ePub
 mkdir ~/Musik/Kommunismus
 mkdir ~/Projekte
+
+#debloat
+
 
 #add rpm-fusion
 sudo dnf install \
@@ -16,7 +21,7 @@ sudo dnf update -y
 
 #install good software
 sudo dnf install \
- ardour7 obs-studio git krita neovim neofetch ulauncher plank arc-theme-plank conky mpv qbittorrent lutris keepassxc kitty cargo rust youtube-dl libreoffice libreoffice-langpack-de libreoffice-langpack-en libreoffice-TexMaths blender foliate thunar-archive-plugin thunar-media-tags-plugin thunar-vcs-plugin thunar-volman gtkhash-thunar gtkhash wireshark torbrowser-launcher dnf-plugins-core dnf-data -y
+ ardour7 obs-studio git krita neovim neofetch mpv ktorrent lutris keepassxc kitty cargo rust youtube-dl libreoffice libreoffice-langpack-de libreoffice-langpack-en libreoffigpack-en libreoffice-TexMaths blender foliate wirce-TexMaths blender foliate wireshark torbrowser-launcher dnf-plugins-core -y
 
  sudo dnf group install --with-optional virtualization -y
  sudo rpm --import https://static.geogebra.org/linux/office@geogebra.org.gpg.key 
