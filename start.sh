@@ -33,8 +33,8 @@ sudo dnf install -y \
  sudo dnf install http://www.geogebra.net/linux/rpm/x86_64/geogebra-classic-6.0.659.0-202108101226.x86_64.rpm 
  wget --content-disposition https://mullvad.net/download/app/rpm/latest
  sudo dnf install -y MullvadVPN-*.rpm
+sudo systemctl enable libvirtd
 
-#sudo systemctl enable libvirtd
 rm -rf MullvadVPN-*.rpm
 rm -rf geogebra-classic-*.rpm
 
