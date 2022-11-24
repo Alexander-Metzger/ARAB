@@ -26,7 +26,7 @@ sudo dnf update -y
 
 #install good software
 sudo dnf install -y \
- ardour7 obs-studio git krita neovim neofetch mpv ktorrent lutris keepassxc cargo rust youtube-dl libreoffice libreoffice-langpack-de libreoffice-langpack-en libreoffigpack-en libreoffice-TexMaths blender foliate wirce-TexMaths blender foliate wireshark torbrowser-launcher dnf-plugins-core kitty
+ ardour7 obs-studio git krita neovim neofetch mpv ktorrent lutris keepassxc cargo rust youtube-dl libreoffice-langpack-en libreoffice-TexMaths blender foliate blender foliate wireshark torbrowser-launcher dnf-plugins-core kitty
 
  sudo dnf group install --with-optional virtualization -y
  sudo rpm --import https://static.geogebra.org/linux/office@geogebra.org.gpg.key 
