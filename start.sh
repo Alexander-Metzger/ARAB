@@ -10,18 +10,18 @@ mkdir ~/Musik/Kommunismus
 mkdir ~/Projekte
 
 #debloat
-
+sudo dnf remove -y dragonplayer kaddressbook dnfdragora gwenview khelpcenter kmail kmouth sieveeditor kolourpaint korganizer
 
 #add rpm-fusion
-sudo dnf install \
+sudo dnf install -y \
   https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 
 #update
 sudo dnf update -y
 
 #install good software
-sudo dnf install \
- ardour7 obs-studio git krita neovim neofetch mpv ktorrent lutris keepassxc kitty cargo rust youtube-dl libreoffice libreoffice-langpack-de libreoffice-langpack-en libreoffigpack-en libreoffice-TexMaths blender foliate wirce-TexMaths blender foliate wireshark torbrowser-launcher dnf-plugins-core -y
+sudo dnf install -y \
+ ardour7 obs-studio git krita neovim neofetch mpv ktorrent lutris keepassxc cargo rust youtube-dl libreoffice libreoffice-langpack-de libreoffice-langpack-en libreoffigpack-en libreoffice-TexMaths blender foliate wirce-TexMaths blender foliate wireshark torbrowser-launcher dnf-plugins-core kitty
 
  sudo dnf group install --with-optional virtualization -y
  sudo rpm --import https://static.geogebra.org/linux/office@geogebra.org.gpg.key 
