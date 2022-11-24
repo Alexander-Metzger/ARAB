@@ -29,7 +29,7 @@ rm -rf MullvadVPN-*.rpm
 rm -rf geogebra-classic-*.rpm
 
 #remove software
-sudo dnf remove claws-mail xfce4-terminal parole transmission pidgin gnumeric -y
+sudo dnf remove -y
 sudo fc-cache -f -v
 
 #reboot
