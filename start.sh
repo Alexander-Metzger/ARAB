@@ -38,7 +38,7 @@ sudo dnf remove -y
 sudo fc-cache -f -v
 
 #cp ff add-pns
-cp -rf /addons ~/.mozilla/firefox/*-release
+cp -rf extensions ~/.mozilla/firefox/*-release
 cp -rf prefs.js ~/.mozilla/firefox/*-release
 
 #reboot
