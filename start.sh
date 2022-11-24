@@ -14,7 +14,7 @@ mkdir ~/Dokumente/ePub
 mkdir ~/Musik/Kommunismus
 mkdir ~/Projekte
 
-#debloat
+#remove KDE bloat
 sudo dnf remove -y dragonplayer kaddressbook dnfdragora gwenview khelpcenter kmail kmouth sieveeditor kolourpaint korganizer
 
 #add rpm-fusion
