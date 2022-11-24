@@ -2,10 +2,10 @@
 
 #This script was created & tested for Fedora 37 KDE Plasma Spin and will be continously updated and optimized.
 
-if [ "$EUID" -ne 0 ]
-  then echo "Please run as root"
-  exit
-fi
+#if [ "$EUID" -ne 0 ]
+#  then echo "Please run as root"
+#  exit
+#fi
 
 #create some folders
 mkdir ~/Bilder/wallpaper
