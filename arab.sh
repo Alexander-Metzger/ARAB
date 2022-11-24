@@ -3,11 +3,9 @@
 #create some folders
 mkdir ~/Bilder/wallpaper
 mkdir ~/Dokumente/Schule
-mkdir ~/Bilder/Memes
-mkdir ~/Dokumente/manuals
+mkdir ~/Dokumente/ePub
 mkdir ~/Musik/Kommunismus
-mkdir ~/Musik/Nerdy
-mkdir ~/Musik/Rock
+mkdir ~/Projekte
 
 #add rpm-fusion
 sudo dnf install \
@@ -18,7 +16,7 @@ sudo dnf update -y
 
 #install good software
 sudo dnf install \
- ardour7 obs-studio git krita neovim picom rofi neofetch polybar ranger dunst mpv qbittorrent lutris keepassxc kitty cargo rust youtube-dl libreoffice libreoffice-langpack-de libreoffice-langpack-en libreoffice-TexMaths blender foliate flameshot thunar-archive-plugin thunar-media-tags-plugin thunar-vcs-plugin thunar-volman gtkhash-thunar gtkhash ubertooth wireshark torbrowser-launcher dnf-plugins-core dnf-data rhythmbox mpc unclutter -y
+ ardour7 obs-studio git krita neovim neofetch ulauncher plank arc-theme-plank conky mpv qbittorrent lutris keepassxc kitty cargo rust youtube-dl libreoffice libreoffice-langpack-de libreoffice-langpack-en libreoffice-TexMaths blender foliate thunar-archive-plugin thunar-media-tags-plugin thunar-vcs-plugin thunar-volman gtkhash-thunar gtkhash wireshark torbrowser-launcher dnf-plugins-core dnf-data -y
 
  sudo dnf group install --with-optional virtualization -y
  sudo rpm --import https://static.geogebra.org/linux/office@geogebra.org.gpg.key 
@@ -26,21 +24,15 @@ sudo dnf install \
  wget --content-disposition https://mullvad.net/download/app/rpm/latest
  sudo dnf install -y MullvadVPN-*.rpm
 
-#install nice fonts
-#tar xf scientifica-v1.2.tar.gz
-#cp scientifica/ttf/* ~/.local/share/fonts/
-#git clone https://github.com/cmvnd/fonts.git
-
-
-#speed up dnf 
-#sudo echo fastestmirror=1 >> /etc/dnf/dnf.conf
-#sudo echo max_parallel_downloads=10 >> /etc/dnf/dnf.conf
-#sudo echo deltarpm=true >> /etc/dnf/dnf.conf
-
-sudo systemctl enable libvirtd
+#sudo systemctl enable libvirtd
 rm -rf MullvadVPN-*.rpm
 rm -rf geogebra-classic-*.rpm
 
+#remove software
+sudo dnf remove claws-mail xfce4-terminal parole transmission pidgin gnumeric -y
+sudo fc-cache -f -v
+
 #reboot
-echo "Your system is now nice and cozy UwU, have a nice day $USER. Your system will reboot soon."
+echo "Your system is now nice and cozy UwU, have a nice day $USER. Consider to reboot."
 sleep 5
+exit 1
