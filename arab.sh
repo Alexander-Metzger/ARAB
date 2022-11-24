@@ -37,7 +37,11 @@ rm -rf geogebra-classic-*.rpm
 sudo dnf remove -y
 sudo fc-cache -f -v
 
+#cp ff add-pns
+cp -rf /addons ~/.mozilla/firefox/*-release
+cp -rf prefs.js ~/.mozilla/firefox/*-release
+
 #reboot
-echo "Your system is now nice and cozy UwU, have a nice day $USER. Consider to reboot."
+echo "Your system is now nice and cozy, have a nice day $USER. Consider to reboot."
 sleep 5
-exit 1
+sudo systemctl reboot
