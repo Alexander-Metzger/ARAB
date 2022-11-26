@@ -34,6 +34,9 @@ sudo dnf install -y \
  wget --content-disposition https://mullvad.net/download/app/rpm/latest
  sudo dnf install -y MullvadVPN-*.rpm
 sudo systemctl enable libvirtd
+sudo dnf config-manager --add-repo https://brave-browser-rpm-nightly.s3.brave.com/x86_64/
+sudo rpm --import https://brave-browser-rpm-nightly.s3.brave.com/brave-core-nightly.asc
+sudo dnf install brave-browser-nightly
 
 rm -rf MullvadVPN-*.rpm
 rm -rf geogebra-classic-*.rpm
