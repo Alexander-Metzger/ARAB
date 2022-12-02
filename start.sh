@@ -3,27 +3,34 @@
 #This script was created & tested for Fedora 37 KDE Plasma Spin and will be continously updated and optimized.
 
 #create some folders
-mkdir ~/Bilder/wallpaper
-mkdir --parents ~/Dokumente/Schule/Englisch
+mkdir --parents ~/Dokumente/Schule/MINT/Mathematik
+mkdir --parents ~/Dokumente/Schule/MINT/Physik
+mkdir --parents ~/Dokumente/Schule/MINT/Chemie
+mkdir --parents ~/Dokumente/Schule/MINT/Biologie
+mkdir --parents ~/Dokumente/Schule/MINT/Informatik
 mkdir --parents ~/Dokumente/Schule/Deutsch
-mkdir --parents ~/Dokumente/Schule/Mathematik
-mkdir ~/Dokumente/ePub
+mkdir --parents ~/Dokumente/Schule/Englisch
+mkdir --parents ~/Dokumente/Schule/Spanisch 
+mkdir --parents ~/Dokumente/Schule/Geschichte
+mkdir --parents ~/Dokumente/Schule/Geografie
+mkdir --parents ~/Dokumente/Schule/Musik
+mkdir ~/Bilder/wallpaper
 mkdir ~/Projekte
 
 #remove KDE bloat
-sudo dnf remove -y konsole dragonplayer kaddressbook dnfdragora gwenview khelpcenter kmail kmouth sieveeditor kolourpaint korganizer  
+sudo dnf remove -y dragonplayer kaddressbook dnfdragora gwenview khelpcenter kmail kmouth sieveeditor kolourpaint korganizer  
 
 #add rpm-fusion
 sudo dnf install -y \
   https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 
-#update
-sudo dnf update -y
-
 #add keys
 sudo rpm --import https://static.geogebra.org/linux/office@geogebra.org.gpg.key 
 wget https://mullvad.net/media/mullvad-code-signing.asc
 gpg --import mullvad-code-signing.asc
+
+#update
+sudo dnf update -y
 
 #install good software
 sudo dnf install -y \
@@ -47,6 +54,7 @@ cp -rf extensions ~/.mozilla/firefox/*-release
 cp -rf prefs.js ~/.mozilla/firefox/*-release
 
 #reboot
-echo "Your system is now nice and cozy, have a nice day $USER. Consider to reboot."
+sudo dnf remove -y konsole
+echo "Your system is now nice and cozy, have a nice day $USER. Your systems gonna reboot."
 sleep 5
 sudo systemctl reboot
