@@ -39,7 +39,7 @@ gpg --import mullvad-code-signing.asc
 sudo dnf update -y
 
 #install good software
-sudo dnf install -y \
+sudo dnf install -y --allowerasing \
  minetest syncthing bismuth ardour7 obs-studio git krita neovim neofetch newsboat mpv ktorrent lutris keepassxc cargo rust youtube-dl libreoffice-langpack-en rpm-build libreoffice-langpack-de libreoffice-langpack-es libreoffice-TexMaths blender foliate blender foliate wireshark torbrowser-launcher dnf-plugins-core kitty fgrun
  sudo dnf copr enable taw/joplin
  sudo dnf install joplin 
