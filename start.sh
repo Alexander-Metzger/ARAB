@@ -17,6 +17,10 @@ mkdir --parents ~/Dokumente/Schule/Musik
 mkdir ~/Bilder/wallpaper
 mkdir ~/Projekte
 
+#cp ff add-pns
+cp -rf extensions ~/.mozilla/firefox/*-release
+cp -rf prefs.js ~/.mozilla/firefox/*-release
+cp -rf kitty
 #remove KDE bloat
 sudo dnf remove -y bismuth dragonplayer kaddressbook dnfdragora gwenview khelpcenter kmail kmouth sieveeditor kolourpaint korganizer  
 
