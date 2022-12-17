@@ -41,7 +41,7 @@ sudo dnf update -y
 sudo dnf install -y \
  minetest syncthing bismuth ardour7 obs-studio git krita neovim neofetch mpv ktorrent lutris keepassxc cargo rust youtube-dl libreoffice-langpack-en rpm-build libreoffice-langpack-de libreoffice-langpack-es libreoffice-TexMaths blender foliate blender foliate wireshark torbrowser-launcher dnf-plugins-core kitty fgrun
  sudo dnf group install --with-optional virtualization -y
- sudo dnf install 
+ sudo dnf install http://www.geogebra.net/linux/rpm/x86_64/geogebra-classic-6.0.666.0-202109211234.x86_64.rpm
  git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
  wget --content-disposition https://mullvad.net/download/app/rpm/latest 
  sudo dnf install -y MullvadVPN-*.rpm
