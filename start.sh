@@ -44,7 +44,7 @@ sudo dnf install -y \
  sudo dnf install http://www.geogebra.net/linux/rpm/x86_64/geogebra-classic-6.0.666.0-202109211234.x86_64.rpm
  git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
  wget --content-disposition https://mullvad.net/download/app/rpm/latest 
- sudo dnf install -y MullvadVPN-*.rpm 
+ sudo dnf install -y MullvadVPN-*.rpm geogebra-classic-*.rpm
  sudo systemctl enable libvirtd
  sudo systemctl enable syncthing@$USER.service
  
