@@ -20,10 +20,10 @@ mkdir ~/Projekte
 #cp ff add-pns
 cp -rf extensions ~/.mozilla/firefox/*-release
 cp -rf prefs.js ~/.mozilla/firefox/*-release
-cp -rf kitty /.config
+cp -rf kitty ~/.config
 
 #remove KDE bloat
-sudo dnf remove -y dragonplayer kaddressbook dnfdragora gwenview khelpcenter kmail kmouth sieveeditor kolourpaint korganizer  
+sudo dnf remove -y dragonplayer kaddressbook dnfdragora akregator gwenview khelpcenter kmail kmouth sieveeditor kolourpaint korganizer
 
 #add rpm-fusion
 sudo dnf install -y \
@@ -39,7 +39,7 @@ sudo dnf update -y
 
 #install good software
 sudo dnf install -y \
- minetest syncthing bismuth ardour7 obs-studio git krita neovim neofetch mpv ktorrent lutris keepassxc cargo rust youtube-dl libreoffice-langpack-en rpm-build libreoffice-langpack-de libreoffice-langpack-es libreoffice-TexMaths blender foliate blender foliate wireshark torbrowser-launcher dnf-plugins-core kitty fgrun
+ minetest syncthing bismuth ardour7 obs-studio git krita neovim neofetch newsboat mpv ktorrent lutris keepassxc cargo rust youtube-dl libreoffice-langpack-en rpm-build libreoffice-langpack-de libreoffice-langpack-es libreoffice-TexMaths blender foliate blender foliate wireshark torbrowser-launcher dnf-plugins-core kitty fgrun
  sudo dnf copr enable taw/joplin
  sudo dnf install joplin 
  sudo dnf group install --with-optional virtualization -y
