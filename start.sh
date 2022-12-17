@@ -16,6 +16,7 @@ mkdir --parents ~/Dokumente/Schule/Geografie
 mkdir --parents ~/Dokumente/Schule/Musik
 mkdir ~/Bilder/wallpaper
 mkdir ~/Projekte
+mkdir ~/Projekte/git-clones
 
 #cp ff add-pns
 cp -rf extensions ~/.mozilla/firefox/*-release
