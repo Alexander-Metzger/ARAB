@@ -24,7 +24,7 @@ cp -rf prefs.js ~/.mozilla/firefox/*-release
 cp -rf kitty ~/.config
 
 #remove KDE bloat
-sudo dnf remove -y dragonplayer kaddressbook dnfdragora akregator gwenview khelpcenter kmail kmouth sieveeditor kolourpaint korganizer
+sudo dnf remove -y dragonplayer kaddressbook dnfdragora gwenview khelpcenter kmail kmouth sieveeditor kolourpaint korganizer
 
 #add rpm-fusion
 sudo dnf install -y \
