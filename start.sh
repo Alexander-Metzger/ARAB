@@ -1,53 +1,32 @@
-
+#!/bin/bash
 
 #This script was created & tested for Fedora 37 KDE Plasma Spin and will be continously updated and optimized.
-
-
-
 #create some folders
-
 mkdir --parents ~/Dokumente/Schule/MINT/Mathematik
-
 mkdir --parents ~/Dokumente/Schule/MINT/Physik
-
 mkdir --parents ~/Dokumente/Schule/MINT/Chemie
-
 mkdir --parents ~/Dokumente/Schule/MINT/Biologie
-
 mkdir --parents ~/Dokumente/Schule/MINT/Informatik
-
 mkdir --parents ~/Dokumente/Schule/Deutsch
-
 mkdir --parents ~/Dokumente/Schule/Englisch
-
 mkdir --parents ~/Dokumente/Schule/Spanisch 
-
 mkdir --parents ~/Dokumente/Schule/Geschichte
-
 mkdir --parents ~/Dokumente/Schule/Geografie
-
 mkdir --parents ~/Dokumente/Schule/Musik
-
 mkdir ~/Bilder/wallpaper
-
 mkdir ~/Projekte
-
 mkdir ~/Projekte/git-clones
 
 
 
 #cp ff add-pns
-
 cp -rf extensions ~/.mozilla/firefox/*-release
-
 cp -rf prefs.js ~/.mozilla/firefox/*-release
-
 cp -rf kitty ~/.config
 
 
 
 #remove KDE bloat
-
 sudo dnf remove -y kgpg dragonplayer kaddressbook dnfdragora gwenview khelpcenter kmail kmouth sieveeditor kolourpaint korganizer
 
 
@@ -55,7 +34,6 @@ sudo dnf remove -y kgpg dragonplayer kaddressbook dnfdragora gwenview khelpcente
 #add rpm-fusion
 
 sudo dnf install -y \
-
   https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 
 
