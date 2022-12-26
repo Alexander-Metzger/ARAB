@@ -41,7 +41,7 @@ sudo dnf update -y
 
 #install good software
 sudo dnf install -y --allowerasing \
-mangohud minetest kleopatra syncthing bismuth ardour7 obs-studio git krita neovim neofetch newsboat mpv ktorrent lutris keepassxc cargo rust youtube-dl rpm-build libreoffice-langpack-de libreoffice-langpack-es libreoffice-TexMaths blender foliate blender foliate wireshark torbrowser-launcher kitty fgrun
+mangohud kleopatra syncthing bismuth ardour7 obs-studio git krita neovim neofetch newsboat mpv ktorrent lutris keepassxc cargo rust youtube-dl rpm-build libreoffice-langpack-de libreoffice-langpack-es libreoffice-TexMaths blender foliate blender foliate wireshark torbrowser-launcher kitty fgrun
 sudo dnf copr enable taw/joplingit-clones
 
  sudo dnf install joplin 
